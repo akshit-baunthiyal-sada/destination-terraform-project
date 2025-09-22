@@ -1,7 +1,7 @@
 # Use shared JSON data in destination project
 output "metrics_from_json" {
   description = "Meta app-config (entire variable)"
-  value = local.json_output.features.enable_metrics
+  value       = local.json_output.features.enable_metrics
 }
 
 output "demo_connection_string" {
