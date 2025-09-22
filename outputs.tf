@@ -1,10 +1,10 @@
 # Use shared JSON data in destination project
-output "json_config" {
+output "app_config" {
   description = "Meta app-config (entire variable)"
-  value       = local.config
+  value       = local.app_config
 }
 
-output "test_state" {
+output "terraform_state" {
   description = "Full output of state file from many moons ago"
-  value       = local.state
+  value       = local.terraform_state
 }
