@@ -1,6 +1,6 @@
 # Using the shared config to create resources
 locals {
-  json_output       = module.shared_config.app_config
-  connection_string = "postgresql://${module.shared_config.database_config.host}:${module.shared_config.database_config.port}/${module.shared_config.database_config.name}"
-  logging_enabled   = module.shared_config.app_config.features.enable_logging
+  config = module.json_config.json_output
+  state  = module.test_state.json_output
+
 }
